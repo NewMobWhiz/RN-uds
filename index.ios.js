@@ -17,7 +17,7 @@ var IPCSocket = {
         return RNIPC.disconnectClient(callback)
     },
     messageToServer: function(message, callback) {
-        return _messageToServer({ name: 'key', cmd: message }, callback)
+        return RNIPC.messageToServer({ name: 'key', cmd: message }, callback)
     },
 };
 
