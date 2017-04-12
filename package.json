@@ -1,6 +1,6 @@
 {
   "name": "react-native-uds", 
-  "version": "0.1.0", 
+  "version": "0.1.1", 
   "description": "React Native Module for iOS", 
   "main": "RNIPC.js", 
   "scripts": {
@@ -18,7 +18,7 @@
   "author": "NewMobWhiz(mobwhiz)", 
   "license": "MIT", 
   "dependencies": {
-    "es6-promisify": "^4.1.0"
+    
   } , 
   "devDependencies": {
     "react-native": ">=0.40.0"
