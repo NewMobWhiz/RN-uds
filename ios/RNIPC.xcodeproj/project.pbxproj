@@ -1,0 +1,302 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84F0A5BF1E97872700416515 /* RNIPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0A5BE1E97872700416515 /* RNIPC.m */; };
+		84F0A5C01E97872700416515 /* RNIPC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84F0A5BD1E97872700416515 /* RNIPC.h */; };
+		84F0A5CD1E97876A00416515 /* GDUnixSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0A5C81E97876A00416515 /* GDUnixSocket.m */; };
+		84F0A5CE1E97876A00416515 /* GDUnixSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0A5CA1E97876A00416515 /* GDUnixSocketClient.m */; };
+		84F0A5CF1E97876A00416515 /* GDUnixSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0A5CC1E97876A00416515 /* GDUnixSocketServer.m */; };
+		84F0A5D21E9C789F00416515 /* RNIPCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0A5D11E9C789F00416515 /* RNIPCManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84F0A5B81E97872700416515 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				84F0A5C01E97872700416515 /* RNIPC.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		84F0A5BA1E97872700416515 /* libRNIPC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNIPC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F0A5BD1E97872700416515 /* RNIPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNIPC.h; sourceTree = "<group>"; };
+		84F0A5BE1E97872700416515 /* RNIPC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNIPC.m; sourceTree = "<group>"; };
+		84F0A5C61E97876A00416515 /* GDUnixSocket_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDUnixSocket_Private.h; sourceTree = "<group>"; };
+		84F0A5C71E97876A00416515 /* GDUnixSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDUnixSocket.h; sourceTree = "<group>"; };
+		84F0A5C81E97876A00416515 /* GDUnixSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDUnixSocket.m; sourceTree = "<group>"; };
+		84F0A5C91E97876A00416515 /* GDUnixSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDUnixSocketClient.h; sourceTree = "<group>"; };
+		84F0A5CA1E97876A00416515 /* GDUnixSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDUnixSocketClient.m; sourceTree = "<group>"; };
+		84F0A5CB1E97876A00416515 /* GDUnixSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDUnixSocketServer.h; sourceTree = "<group>"; };
+		84F0A5CC1E97876A00416515 /* GDUnixSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDUnixSocketServer.m; sourceTree = "<group>"; };
+		84F0A5D01E9C789F00416515 /* RNIPCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNIPCManager.h; sourceTree = "<group>"; };
+		84F0A5D11E9C789F00416515 /* RNIPCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNIPCManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84F0A5B71E97872700416515 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84F0A5B11E97872700416515 = {
+			isa = PBXGroup;
+			children = (
+				84F0A5BC1E97872700416515 /* RNIPC */,
+				84F0A5BB1E97872700416515 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84F0A5BB1E97872700416515 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F0A5BA1E97872700416515 /* libRNIPC.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F0A5BC1E97872700416515 /* RNIPC */ = {
+			isa = PBXGroup;
+			children = (
+				84F0A5BD1E97872700416515 /* RNIPC.h */,
+				84F0A5BE1E97872700416515 /* RNIPC.m */,
+				84F0A5C61E97876A00416515 /* GDUnixSocket_Private.h */,
+				84F0A5C71E97876A00416515 /* GDUnixSocket.h */,
+				84F0A5C81E97876A00416515 /* GDUnixSocket.m */,
+				84F0A5C91E97876A00416515 /* GDUnixSocketClient.h */,
+				84F0A5CA1E97876A00416515 /* GDUnixSocketClient.m */,
+				84F0A5CB1E97876A00416515 /* GDUnixSocketServer.h */,
+				84F0A5CC1E97876A00416515 /* GDUnixSocketServer.m */,
+				84F0A5D01E9C789F00416515 /* RNIPCManager.h */,
+				84F0A5D11E9C789F00416515 /* RNIPCManager.m */,
+			);
+			path = RNIPC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84F0A5B91E97872700416515 /* RNIPC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F0A5C31E97872700416515 /* Build configuration list for PBXNativeTarget "RNIPC" */;
+			buildPhases = (
+				84F0A5B61E97872700416515 /* Sources */,
+				84F0A5B71E97872700416515 /* Frameworks */,
+				84F0A5B81E97872700416515 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNIPC;
+			productName = RNIPC;
+			productReference = 84F0A5BA1E97872700416515 /* libRNIPC.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84F0A5B21E97872700416515 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = smmob;
+				TargetAttributes = {
+					84F0A5B91E97872700416515 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 84F0A5B51E97872700416515 /* Build configuration list for PBXProject "RNIPC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84F0A5B11E97872700416515;
+			productRefGroup = 84F0A5BB1E97872700416515 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F0A5B91E97872700416515 /* RNIPC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84F0A5B61E97872700416515 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F0A5BF1E97872700416515 /* RNIPC.m in Sources */,
+				84F0A5CD1E97876A00416515 /* GDUnixSocket.m in Sources */,
+				84F0A5CF1E97876A00416515 /* GDUnixSocketServer.m in Sources */,
+				84F0A5D21E9C789F00416515 /* RNIPCManager.m in Sources */,
+				84F0A5CE1E97876A00416515 /* GDUnixSocketClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		84F0A5C11E97872700416515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84F0A5C21E97872700416515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84F0A5C41E97872700416515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../React",
+					"$(SRCROOT)/../react-native/React",
+					"$(SRCROOT)/node_modules/react-native/React",
+					"$(SRCROOT)/.../.../react-native/Libraries",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		84F0A5C51E97872700416515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../React",
+					"$(SRCROOT)/../react-native/React",
+					"$(SRCROOT)/node_modules/react-native/React",
+					"$(SRCROOT)/.../.../react-native/Libraries",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F0A5B51E97872700416515 /* Build configuration list for PBXProject "RNIPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F0A5C11E97872700416515 /* Debug */,
+				84F0A5C21E97872700416515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F0A5C31E97872700416515 /* Build configuration list for PBXNativeTarget "RNIPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F0A5C41E97872700416515 /* Debug */,
+				84F0A5C51E97872700416515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84F0A5B21E97872700416515 /* Project object */;
+}

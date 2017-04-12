@@ -1,0 +1,27 @@
+{
+  "name": "react-native-ipc",
+  "version": "0.1.0",
+  "description": "React Native Module...",
+  "main": "RNIPC.js",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:NewMobWhiz/RN-uds.git"
+  },
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios",
+  ],
+  "author": "NewMobWhiz",
+  "license": "NewMobWhiz",
+  "dependencies": {
+    "es6-promisify": "^4.1.0"
+  },
+  "devDependencies": {
+    "react-native": ">= 0.24"
+  }
+}
