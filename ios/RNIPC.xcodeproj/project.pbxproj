@@ -251,7 +251,6 @@
 					"$(inherited)",
 					"$(SRCROOT)/../../React",
 					"$(SRCROOT)/../react-native/React",
-					"$(SRCROOT)/node_modules/react-native/React",
 					"$(SRCROOT)/.../.../react-native/Libraries",
 				);
 				OTHER_LDFLAGS = "-ObjC";
@@ -267,7 +266,6 @@
 					"$(inherited)",
 					"$(SRCROOT)/../../React",
 					"$(SRCROOT)/../react-native/React",
-					"$(SRCROOT)/node_modules/react-native/React",
 					"$(SRCROOT)/.../.../react-native/Libraries",
 				);
 				OTHER_LDFLAGS = "-ObjC";
@@ -295,6 +293,7 @@
 				84F0A5C51E97872700416515 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

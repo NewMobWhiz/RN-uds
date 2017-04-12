@@ -14,31 +14,31 @@
 RCT_EXPORT_MODULE()
 
 RCT_EXPORT_METHOD(startServer:(RCTResponseSenderBlock)callback) {
-    BOOL response = [RNIPCManager startServer];
-    callback(@[[NSNull null], response]);
+    BOOL response = [[RNIPCManager sharedInstance] startServer];
+    callback(@[[NSNull null], [NSNumber numberWithBool:response]]);
 }
 
 RCT_EXPORT_METHOD(stopServer:(RCTResponseSenderBlock)callback) {
-    BOOL response = [RNIPCManager stopServer];
+    BOOL response = [[RNIPCManager sharedInstance] stopServer];
     
-    callback(@[[NSNull null], response]);
+    callback(@[[NSNull null], [NSNumber numberWithBool:response]]);
 }
 
 RCT_EXPORT_METHOD(connectClient:(RCTResponseSenderBlock)callback) {
-    BOOL response = [RNIPCManager connectClient];
+    BOOL response = [[RNIPCManager sharedInstance] connectClient];
     
-    callback(@[[NSNull null], response]);
+    callback(@[[NSNull null], [NSNumber numberWithBool:response]]);
 }
 
 RCT_EXPORT_METHOD(disconnectClient:(RCTResponseSenderBlock)callback) {
-    BOOL response = [RNIPCManager disconnectClient];
+    BOOL response = [[RNIPCManager sharedInstance] disconnectClient];
     
-    callback(@[[NSNull null], response]);
+    callback(@[[NSNull null], [NSNumber numberWithBool:response]]);
 }
 
 RCT_EXPORT_METHOD(messageToServer:(NSDictionary*)message callback:(RCTResponseSenderBlock)callback) {
-    [RNIPCManager messageToServer:message];
-    BOOL response = [RNIPCManager getMessageFromServer];
+    [[RNIPCManager sharedInstance] messageToServer:message];
+    NSString *response = [[RNIPCManager sharedInstance] getMessageFromServer:message];
     
     callback(@[[NSNull null], response]);
 }

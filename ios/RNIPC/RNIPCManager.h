@@ -27,6 +27,8 @@
 @property (nonatomic, readwrite, strong) GDUnixSocketServer *server;
 @property GDClient *client;
 
++(instancetype) sharedInstance;
+
 //Server
 -(BOOL)startServer;
 -(BOOL)stopServer;

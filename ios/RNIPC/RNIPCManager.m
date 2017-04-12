@@ -24,8 +24,18 @@
 
 @implementation RNIPCManager
 
++ (instancetype)sharedInstance {
+    static RNIPCManager *instance;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[RNIPCManager alloc] init];
+    });
+    return instance;
+}
+
 -(BOOL)startServer {
     if (!self.server) {
+        
 #if TARGET_OS_SIMULATOR
         NSString *socketPath = @"/tmp/test_socket";
 #else
