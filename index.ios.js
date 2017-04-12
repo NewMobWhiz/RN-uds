@@ -1,14 +1,14 @@
 'use strict';
 
 var { NativeModules } = require('react-native');
-var Promisify = require('es6-promisify');
-var RNIPCs = NativeModules.RNIPC;
+var promisify = require('es6-promisify');
+var RNIPC = NativeModules.RNIPC;
 
-var _startServer = promisify(RNIPCs.startServer);
-var _stopServer = promisify(RNIPCs.stopServer);
-var _connectClient = promisify(RNIPCs.connectClient);
-var _disconnectClient = promisify(RNIPCs.disconnectClient);
-var _messageToServer = promisify(RNIPCs.messageToServer);
+var _startServer = promisify(RNIPC.startServer);
+var _stopServer = promisify(RNIPC.stopServer);
+var _connectClient = promisify(RNIPC.connectClient);
+var _disconnectClient = promisify(RNIPC.disconnectClient);
+var _messageToServer = promisify(RNIPC.messageToServer);
 
 var IPCSocket = {
     startServer() {

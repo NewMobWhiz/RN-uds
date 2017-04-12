@@ -12,14 +12,16 @@ import {
   View,
   Button,
 } from 'react-native';
-// import IPC from 'react-native-ipc';
+import IPCSocket from 'react-native-uds';
 
 export default class Ipcexample extends Component {
   constructor(props) {
     super(props);
+    this.state = {}
+
   }
   onStartPressed = () => {
-
+    IPCSocket.start()
   }
 
   onStopPressed = () => {
@@ -55,8 +57,9 @@ export default class Ipcexample extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    marginTop: 20,
+    // justifyContent: 'center',
+    // alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
   button: {
