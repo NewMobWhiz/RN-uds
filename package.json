@@ -1,6 +1,6 @@
 {
   "name": "react-native-uds", 
-  "version": "0.1.3", 
+  "version": "0.1.4", 
   "description": "React Native Module for iOS", 
   "main": "RNIPC.js", 
   "scripts": {
@@ -12,11 +12,11 @@
   } , 
   "keywords": [
     "react-component", 
-    "react-native", 
-    "ios"
+    "ios",
+    "Android"
   ] , 
   "author": "NewMobWhiz(mobwhiz)", 
-  "license": "MIT", 
+  "license": "NewMobWhiz", 
   "dependencies": {
     
   } , 
