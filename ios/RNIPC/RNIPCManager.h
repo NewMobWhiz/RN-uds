@@ -26,6 +26,8 @@
 @property (nonatomic, readwrite, assign) BOOL serverIsUp;
 @property (nonatomic, readwrite, strong) GDUnixSocketServer *server;
 @property GDClient *client;
+@property NSString *currentClientId;
+@property NSString *responseMessage;
 
 +(instancetype) sharedInstance;
 
@@ -37,5 +39,7 @@
 -(BOOL)connectClient;
 -(BOOL)disconnectClient;
 -(void)messageToServer:(NSDictionary *)message;
-- (NSString*)getMessageFromServer:(NSString*)message;
+
+- (NSString*)getMessageFromServer;
+- (NSString*)getCurrentClientID;
 @end

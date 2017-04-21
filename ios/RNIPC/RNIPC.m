@@ -26,7 +26,11 @@ RCT_EXPORT_METHOD(stopServer:(RCTResponseSenderBlock)callback) {
 
 RCT_EXPORT_METHOD(connectClient:(RCTResponseSenderBlock)callback) {
     BOOL response = [[RNIPCManager sharedInstance] connectClient];
-    
+//    NSString *data = @"";
+//    if (response) {
+//        data = [[RNIPCManager sharedInstance] getCurrentClientID];
+//        NSLog(@"currentID:%@", data);
+//    }
     callback(@[[NSNull null], [NSNumber numberWithBool:response]]);
 }
 
@@ -38,7 +42,7 @@ RCT_EXPORT_METHOD(disconnectClient:(RCTResponseSenderBlock)callback) {
 
 RCT_EXPORT_METHOD(messageToServer:(NSDictionary*)message callback:(RCTResponseSenderBlock)callback) {
     [[RNIPCManager sharedInstance] messageToServer:message];
-    NSString *response = [[RNIPCManager sharedInstance] getMessageFromServer:message];
+    NSString *response = [[RNIPCManager sharedInstance] getMessageFromServer];
     
     callback(@[[NSNull null], response]);
 }

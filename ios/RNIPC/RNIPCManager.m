@@ -72,6 +72,7 @@
 }
 
 -(BOOL)connectClient{
+    
     [self addClientWithName:@""];
     GDUnixSocketClient *connection = self.client.clientConnection;
     
@@ -114,7 +115,25 @@
 
 -(void)messageToServer:(NSDictionary *)message {
     NSData *data = [NSJSONSerialization dataWithJSONObject:message options:0 error:nil];
-    [self.client.clientConnection writeData:data completion:nil];    
+//    NSData* data = [message dataUsingEncoding:NSUTF8StringEncoding];
+    
+    if (self.serverIsUp == NO) {
+        self.responseMessage = @"No server started!";
+        return;
+    }
+    
+    if (self.client.connected == NO) {
+        self.responseMessage = @"No client connected!";
+        return;
+    }
+    
+    [self.client.clientConnection writeData:data completion:nil];
+    
+    NSError *JSONError = nil;
+    NSDictionary *messageString = [NSJSONSerialization JSONObjectWithData:data options:0 error:&JSONError];
+    NSString *cmd = messageString[@"cmd"];
+    NSLog(@"Received message from client %@\n%@", self.currentClientId, messageString);
+    self.responseMessage = [NSString stringWithFormat:@"Received message from client %@: %@", self.currentClientId, cmd];
 }
 
 
@@ -153,13 +172,17 @@
         if (error) {
             NSLog(@"Failed to send message \"%@\" to client %@", message, clientID);
         } else {
-            [self getMessageFromServer:message];
+            NSLog(@"sent message:%@", message);
         }
     }];
 }
 
-- (NSString*)getMessageFromServer:(NSString*)message {
-    return message;
+- (NSString*)getMessageFromServer{
+    return self.responseMessage;
+}
+
+- (NSString*)getCurrentClientID {
+    return self.currentClientId;
 }
 
 #pragma mark - GDUnixSocketServerDelegate Methods
@@ -174,6 +197,7 @@
 
 - (void)unixSocketServer:(GDUnixSocketServer *)unixSocketServer didAcceptClientWithID:(NSString *)newClientID {
     NSLog(@"Accepted client %@", newClientID);
+    self.currentClientId = newClientID;
     [self sendMessage:@"Your name?" toClientWithID:newClientID];
 }
 
